@@ -16,7 +16,15 @@
     &:last-child {
       margin-left: 7.5px;
     }
-
+    
+    &:hover{
+      cursor: pointer;
+      opacity: .8;
+      & .background_img{
+        transform: scale(1.2);
+        transition: all 4s ease-in-out;
+      }
+    }
     .background_img {
         height: 100%;
         width: 100%;
@@ -31,6 +39,9 @@
       align-items: center;
       justify-content: center;
       border: 1px solid black;
+      position: absolute;
+      background-color: white;
+      opacity: .6;
   
       .title {
         font-weight: bold;
@@ -41,7 +52,7 @@
   
       .subtitle {
         font-weight: lighter;
-        font-size: 16px;
+        font-size: 22px;
       }
     }
   }
